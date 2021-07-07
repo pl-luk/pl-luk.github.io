@@ -10,7 +10,7 @@
         url: "https://meme-api.herokuapp.com/gimme",
         async: false,
         success: function(response) {
-          console.log(response);
+          $("#meme").append("<img src=\"" + response.url + "\" />");
         }
       });
     </script>
